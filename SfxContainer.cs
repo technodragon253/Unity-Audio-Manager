@@ -6,16 +6,6 @@ using UnityEngine.Audio;
 public class SfxContainer : ScriptableObject
 {
     [SerializeField]
-    private AudioClip _clip; //List of audio clips.
-    public AudioClip clip {
-        get {
-            return _clip;
-        }
-        private set {
-            _clip = value;
-        }
-    }
-    [SerializeField]
     private List<AudioClip> _clips; //List of audio clips.
     public List<AudioClip> clips {
         get {
